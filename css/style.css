@@ -1,0 +1,52 @@
+:root {
+  --wrapper-width: 320px; 
+  --wrapper-height: var(--wrapper-width); 
+  --dot-width: 16px;
+  --wr-color: #277553;
+  --bg-color: #6D6562;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.wrapper {
+  width: var(--wrapper-width);
+  height: var(--wrapper-height);
+  margin: auto;
+  background-color: var(--wr-color);
+  background-image: url(https://image.ibb.co/n0M0cQ/red90x90.jpg);
+  background-repeat: no-repeat;
+/*   background-position: 50% 50%; */
+  position: relative;
+}
+
+.controls {
+  width: var(--wrapper-width);
+  height: calc(var(--wrapper-width) / 5);
+  margin: 10px auto;
+}
+
+label {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-family: roboto;
+}
+
+#h1-x, #h1-y {
+  color: #fff;
+  font-size: 20px;
+  font-family: roboto;
+  text-align: center;
+} 
+
+.dot {
+  width: var(--dot-width);
+  height: var(--dot-width);
+  background: #fff;
+  border-radius: calc( var(--dot-width) / 2);
+  position: absolute;
+  top: calc( var(--dot-width) / -2);
+  left: calc( var(--dot-width) / -2);
+}
